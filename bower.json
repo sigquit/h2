@@ -1,0 +1,9 @@
+{
+	"name": "h2js",
+	"version": "0.3.2",
+	"description": "Full-Stack JavaScript with MySQL, MongoDB, Express, Jquery, and Node.js.",
+	"dependencies": {
+		"bootstrap": "~3",
+		"jquery": "~1.11.2"
+	}
+}

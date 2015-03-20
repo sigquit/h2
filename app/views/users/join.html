@@ -1,0 +1,34 @@
+{% extends '../layouts/login.layout.html' %}
+
+{% block content %}
+	<form action="/auth/signup" method="post" name="userForm" class="signin form-horizontal" autocomplete="off">
+		<fieldset>
+			<div class="form-group">
+				<label for="firstName">First Name</label>
+				<input type="text" required id="firstName" name="firstName" class="form-control" placeholder="First Name">
+			</div>
+			<div class="form-group">
+				<label for="lastName">Last Name</label>
+				<input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last Name">
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" class="form-control" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="Username">
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" class="form-control" placeholder="Password">
+			</div>
+			<div class="text-center form-group">
+				<button type="submit" class="btn btn-large btn-primary">Sign up</button>&nbsp; or&nbsp;
+				<a href="/login" class="show-signup">Sign in</a>
+			</div>
+			<div class="text-center text-danger">
+			</div>
+		</fieldset>
+	</form>
+{% endblock %}
